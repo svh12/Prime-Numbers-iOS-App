@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let n = Int(primeTextField.text!)
 
         //Create an array of prime numbers
-        //For an explanation on how this line works, please see my post here: https://svh12.github.io/index.html
+        //For an explanation on how this line works, please see my post here: https://svh12.github.io/2017/09/11/breaking-down-the-one-liner.html
         let primeNumbers = [Int](2...2000).filter({num in [Int](1...Int(sqrt(Float(num)))).filter({num % $0 == 0}).count == 1})
         
         //Select number of primes needed from the prime number array based on user input
